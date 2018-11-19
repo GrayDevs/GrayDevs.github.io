@@ -3,38 +3,38 @@
 //$search must be an actual page name that must be exact and it is case sensitive.)
 //test $search = "University";
 
-//Récupération des variables
+//RÃ©cupÃ©ration des variables
 $search = $_POST["search"]; 
 $language = $_POST["language"];
 $nombre_resultat = $_POST["nombre_resultat"];
 
-//Protection à effectuer à l'affichage pour éviter l'interprétation d'un script même si utilisation de la donnée réduit les risques
+//Protection Ã  effectuer Ã  l'affichage pour Ã©viter l'interprÃ©tation d'un script mÃªme si utilisation de la donnée réduit les risques
 //htmlentities(strip_tags(...)
 
 $requestURL = getUrlDbpedia($search, $language, $nombre_resultat);
-$donnée = request($requestURL);
+/*$donnee = request($requestURL);*/
 $responseArray = json_decode(request($requestURL), true);
 
 echo '<div class="container" id="resultat" style="clear: both;">';
-	echo '<h3>Result(s) for : <i style="font-size:22px">'.$search.'</i> </h3>';
-	echo "Language selected : <b>".$language."</b> | Number of result : <b>".$nombre_resultat."</b>";
+	echo '<h3>RÃ©sultat(s) pour : <i style="font-size:22px">'.$search.'</i> </h3>';
+	echo "Langue sÃ©lectionnÃ©e : <b>".$language."</b> | Nombre de rÃ©sultats : <b>".$nombre_resultat."</b>";
 	echo '<a href="index.php?page=search"> 
 			<button id="returnBtn">
-			  Retry
+			  Relancez
 			</button> 
 		</a>';
 	echo '<hr>';
-echo '<div style="min-height:411px;">';
+echo '<div style="min-height:389px;">';
 if(empty($responseArray["results"]["bindings"]))
 {
 		echo '<div id="boite_erreur"> <span class="closebtn">&times;</span>';
 			echo '<div class="alert-warning" style="background-color: #ff9800;">';
-				echo '<h4><b>Warning !</b> An Error occured</h4>';
+				echo '<h4><b>Attention !</b> Une erreur s\'est produite</h4>';
 			echo '</div>';
 			echo '<div class="warning" style="background-color: #ffffcc; border-left: 6px solid #ffeb3b;">';
-				echo '<b>Most common errors :</b><br>';
-				echo '- The orthographe is wrong <br>';
-				echo '- The selected language does not match the language in which you were searching.';
+				echo '<b>Les erreurs les plus communes :</b><br>';
+				echo '- La requÃªte est mal orthographiÃ©e <br>';
+				echo '- La langue sÃ©lÃ©ctionnÃ©e ne correspond pas Ã  celle du mot recherchÃ©';
 			echo '</div>';
 		echo '</div>';
 	
@@ -48,104 +48,36 @@ else{
 		echo '<div class="panel" style="margin-top:10px">';
 			echo '<div style="display: inline-block;">';
 				echo '<p style="float:left; width:70%">'.$responseArray["results"]["bindings"][$i]["description"]["value"].'</p>';
-				echo "<img src='".$responseArray["results"]["bindings"][$i]["image"]["value"]."' style='float:right'/>";
+				echo "<img src='".$responseArray["results"]["bindings"][$i]["image"]["value"]."' style='float:right;'/>";
 			echo '</div>';
 			echo '<a  onclick="window.open(this.href); return false;" href="'.$responseArray["results"]["bindings"][$i]["wiki"]["value"].'"><button class="button" id="wiki_link_button"> <span> Wikipedia </span></button></a>';
 		echo '</div>';
 	}
 }
 
-
 echo '</div>';
 echo '<hr>';
 echo '</div><!--resultat-->';
-
-/*Problème: mauvaise intégration du css de gestion des erreurs sur cette page
-	Solution (temporaire): utilisation de la balise <style> directement sur cette page*/
-////////////////////////////////////////////////////////////////////////
-	echo '<style>
-		#boite_erreur{
-			border: 1px solid #ffeb3b;
-			background-color: #ff9800;
-		}
-
-		.alert-warning {
-			padding-left:20px;
-			background-color: #f44336;
-			color: white;
-			opacity: 1;
-			transition: opacity 0.6s;
-		}
-
-		.closebtn {
-			margin-left: 15px;
-			color: white;
-			font-weight: bold;
-			float: right;
-			font-size: 22px;
-			line-height: 20px;
-			cursor: pointer;
-			transition: 0.3s;
-		}
-
-		.closebtn:hover {
-			color: black;
-		}
-		
-		.warning {
-			padding:10px;
-			background-color: #ffffcc;
-			border-left: 6px solid #ffeb3b;
-		}
-		
-		#returnBtn {
-			padding: 15px 20px;
-			font-size: 24px;
-			text-align: center;
-			cursor: pointer;
-			outline: none;
-			color: #fff;
-			background-color: #4CAF50;
-			border: none;
-			border-radius: 15px;
-			box-shadow: 0 8px #999;
-			float:right; 
-			margin: -32px 0px;
-			background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-			background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-			background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-		}
-
-		#returnBtn:hover {background-color: #3e8e41}
-
-		#returnBtn:active {
-			background-color: #3e8e41;
-			box-shadow: 0 5px #666;
-			transform: translateY(4px);
-		}
-	</style>';
-////////////////////////////////////////////////////////////////////////
 	
 /* TEST
 echo "<h1> Tests </h1>";
 echo "<h3> Request URL: </h3> <p>".$requestURL."</p>";
-echo "<h3> JSON Response: </h3> <p>".$donnée."</p>";
+echo "<h3> JSON Response: </h3> <p>".$donnee."</p>";
 echo "<h3> Parsed Response (Array): </h3> <p>".printArray($responseArray)."</p>";
 */
 /////////////////////////////////////////////////////////
 /////////////////////// FONCTIONS ///////////////////////
 
 /*//////////////// getUrlDbpedia ////////////
-Description: Formate requête sparql et donnée utilisateur pour obtenir une url
-Argument(s): terme (catégorie) entrée par l'utilisateur ainsi que le nombre de résultats et la langue (éventuellement)
-Résultat: URL valide ($searchUrl) à envoyer au triple-store de dbpedia
+Description: Formate requÃªte sparql et donnÃ©e utilisateur pour obtenir une url
+Argument(s): terme (catÃ©gorie) entrÃ©e par l'utilisateur ainsi que le nombre de rÃ©sultats et la langue (éventuellement)
+RÃ©sultat: URL valide ($searchUrl) Ã  envoyer au triple-store de dbpedia
 ///////////////////////////////////////////*/
 function getUrlDbpedia($search, $language, $nombre_resultat)
 {
    $format = 'json';
    
-   /*gestion des problèmes liées à la casse*/
+   /*gestion des problÃ¨mes liÃ©es Ã  la casse*/
    $search = strtolower($search);
    
    $query = 
@@ -178,7 +110,7 @@ function getUrlDbpedia($search, $language, $nombre_resultat)
 	}ORDER BY DESC(?ranking) LIMIT ".$nombre_resultat;
    
    $searchUrl = 'http://dbpedia.org/sparql?'
-      .'query='.urlencode($query) //encode les caractères spéciaux pour l'url
+      .'query='.urlencode($query) //encode les caractÃ©res spÃ©ciaux pour l'url
       .'&format='.$format
 	  .'&timeout=30000&debug=on';
 
@@ -186,20 +118,20 @@ function getUrlDbpedia($search, $language, $nombre_resultat)
 }
 
 /*//////////////// request ////////////////
-Description: permet de récupérer le JSON en interrogeant la BDD
-Argument(s): URL formé précédement (searchUrl)
-Résultat: données json ($json_data)
+Description: permet de rÃ©cupÃ©rer le JSON en interrogeant la BDD
+Argument(s): URL formÃ© prÃ©cÃ©dement (searchUrl)
+RÃ©sultat: donnÃ©es json ($json_data)
 ///////////////////////////////////////////*/
 function request($searchUrl){
-	//on privilégie file_get_contents() plutôt que cURL
+	//on privilÃ©gie file_get_contents() plutÃ´t que cURL
 	//utilisation de file_get_contents : file_get_contents(path,_path,context,start,max_length)
 	$json_data = file_get_contents("$searchUrl");
 	return $json_data;
 }
 
 /*//////////////// printArray ////////////////
-Description: affiche le json parsé (ordonnée), permet de visualiser les données
-Argument(s): tableau => le json passé par json_decode(...,true) est un tableau
+Description: affiche le json parsÃ© (ordonnÃ©e), permet de visualiser les donnÃ©es
+Argument(s): tableau => le json passÃ© par json_decode(...,true) est un tableau
 ///////////////////////////////////////////*/
 function printArray($array, $spaces = "")
 {
@@ -227,16 +159,3 @@ function printArray($array, $spaces = "")
 }
 
 ?>
-
-<script> /*bouton d'alerte */
-var close = document.getElementsByClassName("closebtn");
-var i;
-
-for (i = 0; i < close.length; i++) {
-    close[i].onclick = function(){
-        var div = this.parentElement;
-        div.style.opacity = "0";
-        setTimeout(function(){ div.style.display = "none"; }, 600);
-    }
-}
-</script>

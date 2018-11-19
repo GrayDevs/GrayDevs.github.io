@@ -1,16 +1,16 @@
 
 /*////////////////////////////////////////////////////////////////////
   Theme Name: Site Projet Tutoré
-  Author: A. Pinon & Yann Vallée
+  Author: Antoine Pinon & Yann Vallée
   Description: thème développé pour le projet de 2ème année DUT R&T
-  Version: Beta 1.0 (12/03/2017)
+  Version: Beta 2.0 aka The Final Countdown (19/03/2017)
 ////////////////////////////////////////////////////////////////// */
 
 /* Importation des polices */
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic);
 
 
 /*////////////////////////////////////////////////////////////////////
@@ -35,8 +35,8 @@
 #header {
 	padding: 75px 0 0 0;
 	background-color: #fff;	
-	background-size: 100% 6em,		100% 6em,					auto;
-	background-repeat: no-repeat,	no-repeat,					repeat;
+	background-size: 100% 6em,		100% 6em,			auto;
+	background-repeat: no-repeat,	no-repeat,			repeat;
 }
 
 /*////////////////////////////////////////////////////////////////////
@@ -44,10 +44,7 @@
 #nav {
 	cursor: default;
 	background-color: #333;
-	background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
-	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
-	background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
-	background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 	padding: 0;
 }
 
@@ -64,8 +61,7 @@
   padding-left: 5px; 
 }
 
-/* /// menu button animation 
-(marche moyen, s'active un peu quand il veut, problème avec le js probable)*/
+/* menu button */
 .bar1, .bar2, .bar3 {
     width: 30px;
     height: 5px;
@@ -73,29 +69,10 @@
     transition: 0.4s;
 }
 
-
-/* Rotate first bar */
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-8px, 3px) ;
-    transform: rotate(-45deg) translate(-8px, 3px) ;
-}
-
-/* Fade out the second bar */
-.change .bar2 {opacity: 0;}
-
-/* Rotate last bar */
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-3px, -8px) ;
-    transform: rotate(45deg) translate(-3px, -8px) ;
-}
-
 /*////////////////////////////////////////////////////////////////////
 /////////////////// FOOTER //////////////////////*/	
 #footer {
-	background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2)), url("images/bg01.png");
-	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2)), url("images/bg01.png");
-	background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2)), url("images/bg01.png");
-	background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2)), url("images/bg01.png");
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.2)), url("images/bg01.png");
 }
 
 .col-container {
@@ -222,18 +199,11 @@ bottom: 50px !important;
 			#banner #banner_content .button {
 				vertical-align: middle;
 				margin-left: 1em;
-				-moz-appearance: none;
-				-webkit-appearance: none;
-				-ms-appearance: none;
-				appearance: none;
 				-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-				background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-				background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-				background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-				background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
+				background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 				background-color: #37c0fb;
 				border-radius: 5px;
 				border: 0;
@@ -251,9 +221,7 @@ bottom: 50px !important;
 
 		#banner #banner_content .button:hover {background: #0b7dda;}
 
-
-/*////////////////////////////////////////////////////////////////////
-/////////////////// FEATURES //////////////////////*/		
+/* /////////////////// features //////////////////////*/		
 .single-features {
   overflow: hidden;
   padding-bottom: 10px;
@@ -270,13 +238,6 @@ bottom: 50px !important;
 
 .single-features h2{
   margin-bottom: 15px;
-}		
-
-/* /// features animations */
-
-.scaleIn {
-  -webkit-animation-name: scaleIn;
-  animation-name: scaleIn;
 }
 
 /* 
@@ -327,6 +288,7 @@ bottom: 50px !important;
 
 /* Accordion Button */
 /* Style the buttons that are used to open and close the accordion panel */
+
 button.accordion {
     background-color: #eee;
     color: #444;
@@ -363,6 +325,7 @@ div.panel {/* Style the accordion panel. Note: hidden by default */
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+	border: none;
 }
 
 /* /// wiki link button */
@@ -407,7 +370,63 @@ div.panel {/* Style the accordion panel. Note: hidden by default */
 		
 		
 /* En cas d'erreur */	
-/*Intégré directement sur la page query.php suite à un problème avec la transmission du css*/
+
+#boite_erreur{
+	border: 1px solid #ffeb3b;
+	background-color: #ff9800;
+}
+.alert-warning {
+	padding-left:20px;
+	background-color: #f44336;
+	color: white;
+	opacity: 1;
+	transition: opacity 0.6s;
+}
+
+.closebtn {
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.closebtn:hover {
+	color: black;
+}
+		
+.warning {
+	padding:10px;
+	background-color: #ffffcc;
+	border-left: 6px solid #ffeb3b;
+}
+		
+#returnBtn {
+	padding: 15px 20px;
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 8px #999;
+	float:right; 
+	margin: -32px 0px;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
+}
+
+#returnBtn:hover {background-color: #3e8e41}
+
+#returnBtn:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
 
 /* 
 ////////////////////////////////////////////////////////////////////
@@ -415,7 +434,55 @@ div.panel {/* Style the accordion panel. Note: hidden by default */
 ////////////////////////////////////////////////////////////////////
 */
 
-/*meme problème que pour query.php*/
+#coming-soon { 
+  background-image: url("../images/coming-soon-bg.png");
+  background-position: center 35px;
+  background-repeat: repeat-x;
+  padding: 70px 0;
+  overflow: hidden;
+  min-height:480px;
+}
+
+/*descend les icones*/
+#coming-soon .social-link {
+  margin-top: 35px;
+}
+
+/*modifie les icones (bordures, ...)*/
+#coming-soon i {
+  border: 3px solid #cecece;
+  height: 40px;
+  width: 40px;
+  line-height: 35px;
+  color: #cecece;
+  font-size: 17px;
+  margin:0 15px;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/*ajoute la couleur en hover*/
+#coming-soon i.fa-facebook:hover{
+  background-color:transparent;  
+  color: #314A87;
+  border-color:#314A87;
+}
+
+#coming-soon i.fa-twitter:hover{
+  background-color:transparent;  
+  color: #22BBF4;
+  border-color:#22BBF4;
+}
+
+#coming-soon i.fa-google-plus:hover{
+  background-color:transparent;  
+  color: #DD4C3B;
+  border-color:#DD4C3B;
+}
 
 
 /* 
@@ -430,6 +497,10 @@ div.panel {/* Style the accordion panel. Note: hidden by default */
   margin-bottom: 20px;
 }
 
+.single-price{
+	margin:10px;
+}
+
 /*gère les listes (enlève les puces présentes par défaut, ...)*/
 .single-price ul {
   padding: 0;
@@ -437,6 +508,7 @@ div.panel {/* Style the accordion panel. Note: hidden by default */
   list-style: none;
 }
 
+/*gère les titres des tableaux */
 .table-heading {
   background-color: transparent !important;
   color: #FFFFFF !important;
@@ -487,6 +559,7 @@ div.panel {/* Style the accordion panel. Note: hidden by default */
 .single-price ul li span{
   float: right;
 }
+
 /* 
 ////////////////////////////////////////////////////////////////////
                           CONTACT PAGE
@@ -513,6 +586,6 @@ div.panel {/* Style the accordion panel. Note: hidden by default */
   color: #fff;
   outline: none;
   box-shadow: none;
-  opacity: .8;
+  opacity: 0.8;
 }
 
