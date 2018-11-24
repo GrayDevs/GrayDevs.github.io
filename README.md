@@ -4,8 +4,10 @@
 ![version](https://badgen.net/badge/Version/~0.1/cyan)
 ![licence](https://badgen.net/badge/Licence/no_licence/blue)
 
-Obviously, github.io does not support PHP, to see the website, install a web server and put those files into the root.
-If you are a beginner, I recommand to use EasyPHP-Webserver/Devserver which pack everythings you need.
+The goal was to create a website that would classified Wikipedia data using a Triple-store database linked to the wikidata project. The classification process was based on a simplified version of the ranking algorithms used by search engines such as bing or duckduckgo.
+
+*Nota :* Obviously, github.io does not support PHP, to see the website, install a web server and put those files into the root.
+If you are a beginner, I recommend to use EasyPHP-Webserver/Devserver which pack everything you need.
 
 ## Understanding the concepts
 
@@ -52,15 +54,15 @@ The Classification is assured by ![DBpedia PageRank](http://people.aifb.kit.edu/
 ![Result EN](IMG_Web/requête%20valide%20anglais%202.PNG? "Result EN")
 
 ## Built With
-* [Notepad++](https://code.visualstudio.com/) - Simple text editor
-* [EasyPHP-Webserver/Devserver](https://code.visualstudio.com/) - Easy to use WebDev Pack
+* [Notepad++](https://notepad-plus-plus.org/) - Simple text editor
+* [EasyPHP-Webserver/Devserver](https://www.easyphp.org/) - Easy to use WebDev Pack
 
 * Wanna learn HTLM5, CSS3, Bootstrap, Javascript JSON, SPARQL and more ?
-* Check that out : [codecademy](https://www.codecademy.com/), [w3schools](https://www.w3schools.com/html/)
+* Check that out : [codecademy](https://www.codecademy.com/), [w3schools](https://www.w3schools.com/html/), [codewars](https://www.codewars.com/)
 
 ## Authors
 
 See the list of [contributors](https://github.com/GrayDevs/SemanticWeb/contributors) who participated in this project.
 
-Special thanks to 
+Special thanks to :
 * **[Andreas Thalhammer](http://www.aifb.kit.edu/web/Andreas_Thalhammer/en)** - *PageRank Algorithm*
