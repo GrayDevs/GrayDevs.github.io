@@ -1,6 +1,6 @@
 # Web Dev - Introduction to Web 3.0
 
-![build](https://badgen.net/badge/Status/on standby/grey) 
+![status](https://badgen.net/badge/Status/on%20standby/grey) 
 ![version](https://badgen.net/badge/Version/~0.1/cyan)
 ![licence](https://badgen.net/badge/Licence/no_licence/blue)
 
