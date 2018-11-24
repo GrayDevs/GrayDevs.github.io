@@ -12,7 +12,6 @@ If you are a beginner, I recommand to use EasyPHP-Webserver/Devserver which pack
 ### Wikipedia and DBpedia
 - https://en.wikipedia.org/wiki/DBpedia
 - https://en.wikipedia.org/wiki/Wikipedia:About
-
 - http://wiki.dbpedia.org/Documentation
 - http://wiki.dbpedia.org/services-resources/documentation/phpframework
 
@@ -45,4 +44,4 @@ The Classification is assured by ![DBpedia PageRank](http://people.aifb.kit.edu/
 
 #### Valid Request [EN]
 ![Request EN](IMG_Web/requête valide anglais.PNG? "Request EN")
-![Result EN](IMG_Web/requête valide anglais 2.PNG? "Result EN")
+![Result EN](IMG_Web/requête%20valide%20anglais%202.PNG? "Result EN")
