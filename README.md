@@ -9,47 +9,47 @@ The goal was to create a website that would classified Wikipedia data using a Tr
 *Nota :* Obviously, github.io does not support PHP, to see the website, install a web server and put those files into the root.
 If you are a beginner, I recommend to use EasyPHP-Webserver/Devserver which pack everything you need.
 
-## Understanding the concepts
+## I - Understanding the concepts
 
-### What is semantic web /web 3.0 ?
+### 1. What is semantic web /web 3.0 ?
 - https://en.wikipedia.org/wiki/Semantic_Web#Web_3.0
 - https://www.w3.org/standards/semanticweb/
 
-### Wikipedia and DBpedia
+### 2. Wikipedia and DBpedia
 - https://en.wikipedia.org/wiki/DBpedia
 - https://en.wikipedia.org/wiki/Wikipedia:About
 - http://wiki.dbpedia.org/Documentation
 - http://wiki.dbpedia.org/services-resources/documentation/phpframework
 
-### RDF & SPARQL
+### 3. RDF & SPARQL
 - https://en.wikipedia.org/wiki/Linked_data
 - https://en.wikipedia.org/wiki/Resource_Description_Framework
 - https://www.w3.org/2009/sparql/wiki/Main_Page
 - https://www.w3.org/TR/rdf-sparql-query/
 
-## The project
+## II - The project
 
-### How does it works ?
+### 1. How does it works ?
 ![Project Architecture](IMG_Web/Architecture.png? "Project Architecture")
 
 #### Important :
-To access the triple-store, we use ![DBpedia Virtuoso SPARQL Query Editor](http://dbpedia.org/sparql)
-The Classification is assured by ![DBpedia PageRank](http://people.aifb.kit.edu/ath/)
+- To access the triple-store, we use ![DBpedia Virtuoso SPARQL Query Editor](http://dbpedia.org/sparql)
+- The Classification is assured by ![DBpedia PageRank](http://people.aifb.kit.edu/ath/)
 
-### Results
+### 2. Results
 
-#### Landing page
+#### 2.1. Landing page
 ![Landing page](IMG_Web/Accueil%201.PNG? "Landing page")
 ![Landing page 2](IMG_Web/Accueil%202.PNG? "Landing page 2")
 
-#### Search Engine
+#### 2.2. Search Engine
 ![Search Engine](IMG_Web/moteur%20de%20recherche.PNG? "Search Engine")
 
-#### Valid Request [FR]
+#### 2.3. Valid Request [FR]
 ![Request FR](IMG_Web/requête%20valide%20français.PNG? "Request FR")
 ![Result FR](IMG_Web/requête%20valide%20français 2.PNG? "Result FR")
 
-#### Valid Request [EN]
+#### 2.4. Valid Request [EN]
 ![Request EN](IMG_Web/requête%20valide%20anglais.PNG? "Request EN")
 ![Result EN](IMG_Web/requête%20valide%20anglais%202.PNG? "Result EN")
 
