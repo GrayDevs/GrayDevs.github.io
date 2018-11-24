@@ -8,10 +8,12 @@ If you are a beginner, I recommand to use EasyPHP-Webserver/Devserver which pack
 ### What is semantic web /web 3.0 ?
 
 @see https://en.wikipedia.org/wiki/Semantic_Web#Web_3.0
+
 @see https://www.w3.org/standards/semanticweb/
 
 ### Wikipedia and DBpedia
 @see https://en.wikipedia.org/wiki/DBpedia
+
 @see https://en.wikipedia.org/wiki/Wikipedia:About
 
 @see http://wiki.dbpedia.org/Documentation
@@ -19,9 +21,11 @@ If you are a beginner, I recommand to use EasyPHP-Webserver/Devserver which pack
 
 ### RDF & SPARQL
 @see https://en.wikipedia.org/wiki/Linked_data
+
 @see https://en.wikipedia.org/wiki/Resource_Description_Framework
 
 @see https://www.w3.org/2009/sparql/wiki/Main_Page
+
 @see https://www.w3.org/TR/rdf-sparql-query/
 
 ## The project
