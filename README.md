@@ -2,7 +2,7 @@
 
 ![status](https://badgen.net/badge/Status/on%20standby/grey) 
 ![version](https://badgen.net/badge/Version/~0.1/cyan)
-![licence](https://badgen.net/badge/Licence/no_licence/blue)
+![licence](https://badgen.net/badge/Licence/CC-BY-SA 3.0/blue)
 
 The goal was to create a website that would classified Wikipedia data using a Triple-store database linked to the wikidata project. The classification process was based on a simplified version of the ranking algorithms used by search engines such as bing or duckduckgo.
 
@@ -65,3 +65,7 @@ Check that out : [codecademy](https://www.codecademy.com/), [w3schools](https://
 See the list of [contributors](https://github.com/GrayDevs/SemanticWeb/contributors) who participated in this project.
 
 Special thanks to **[Andreas Thalhammer](http://www.aifb.kit.edu/web/Andreas_Thalhammer/en)** - *PageRank Algorithm*
+
+## Licence
+
+Wikipedia & DBpedia contents are under *[CC-BY-SA 3.0 Licence](https://creativecommons.org/licenses/by-sa/3.0/)*.
