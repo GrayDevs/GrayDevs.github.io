@@ -57,12 +57,11 @@ If you are a beginner, I recommend to use EasyPHP-Webserver/Devserver which pack
 * [Notepad++](https://notepad-plus-plus.org/) - Simple text editor
 * [EasyPHP-Webserver/Devserver](https://www.easyphp.org/) - Easy to use WebDev Pack
 
-* Wanna learn HTLM5, CSS3, Bootstrap, Javascript JSON, SPARQL and more ?
-* Check that out : [codecademy](https://www.codecademy.com/), [w3schools](https://www.w3schools.com/html/), [codewars](https://www.codewars.com/)
+Wanna learn HTLM5, CSS3, Bootstrap, Javascript JSON, SPARQL and more ?
+Check that out : [codecademy](https://www.codecademy.com/), [w3schools](https://www.w3schools.com/html/), [codewars](https://www.codewars.com/)
 
 ## Authors
 
 See the list of [contributors](https://github.com/GrayDevs/SemanticWeb/contributors) who participated in this project.
 
-Special thanks to :
-* **[Andreas Thalhammer](http://www.aifb.kit.edu/web/Andreas_Thalhammer/en)** - *PageRank Algorithm*
+Special thanks to **[Andreas Thalhammer](http://www.aifb.kit.edu/web/Andreas_Thalhammer/en)** - *PageRank Algorithm*
