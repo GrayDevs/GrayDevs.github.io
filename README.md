@@ -33,8 +33,8 @@ If you are a beginner, I recommend to use EasyPHP-Webserver/Devserver which pack
 ![Project Architecture](IMG_Web/Architecture.png? "Project Architecture")
 
 #### Important :
-- To access the triple-store, we use ![DBpedia Virtuoso SPARQL Query Editor](http://dbpedia.org/sparql)
-- The Classification is assured by ![DBpedia PageRank](http://people.aifb.kit.edu/ath/)
+- To access the triple-store, we use [DBpedia Virtuoso SPARQL Query Editor](http://dbpedia.org/sparql)
+- The Classification is assured by [DBpedia PageRank](http://people.aifb.kit.edu/ath/)
 
 ### 2. Results
 
