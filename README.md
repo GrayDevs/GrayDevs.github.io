@@ -1,5 +1,9 @@
 # Web Dev - Introduction to Web 3.0
 
+![build](https://badgen.net/badge/build/passed/green) 
+![version](https://badgen.net/badge/version/0.1%20(probably)/orange)
+![licence](https://badgen.net/badge/licence/not%20yet/blue)
+
 Obviously, github.io does not support PHP, to see the website, install a web server and put those files into the root.
 If you are a beginner, I recommand to use EasyPHP-Webserver/Devserver which pack everythings you need.
 
