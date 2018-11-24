@@ -1,8 +1,8 @@
 # Web Dev - Introduction to Web 3.0
 
-![build](https://badgen.net/badge/build/passed/green) 
-![version](https://badgen.net/badge/version/0.1%20(probably)/orange)
-![licence](https://badgen.net/badge/licence/not%20yet/blue)
+![build](https://badgen.net/badge/Status/passed/grey) 
+![version](https://badgen.net/badge/Version/0.1%20(approx)/cyan)
+![licence](https://badgen.net/badge/Licence/no_licence/blue)
 
 Obviously, github.io does not support PHP, to see the website, install a web server and put those files into the root.
 If you are a beginner, I recommand to use EasyPHP-Webserver/Devserver which pack everythings you need.
@@ -36,16 +36,16 @@ The Classification is assured by ![DBpedia PageRank](http://people.aifb.kit.edu/
 ### Results
 
 #### Landing page
-![Landing page](IMG_Web/Accueil 1.PNG? "Landing page")
-![Landing page 2](IMG_Web/Accueil 2.PNG? "Landing page 2")
+![Landing page](IMG_Web/Accueil%201.PNG? "Landing page")
+![Landing page 2](IMG_Web/Accueil%202.PNG? "Landing page 2")
 
 #### Search Engine
-![Search Engine](IMG_Web/moteur de recherche.PNG? "Search Engine")
+![Search Engine](IMG_Web/moteur%20de%20recherche.PNG? "Search Engine")
 
 #### Valid Request [FR]
-![Request FR](IMG_Web/requête valide français.PNG? "Request FR")
-![Result FR](IMG_Web/requête valide français 2.PNG? "Result FR")
+![Request FR](IMG_Web/requête%20valide%20français.PNG? "Request FR")
+![Result FR](IMG_Web/requête%20valide%20français 2.PNG? "Result FR")
 
 #### Valid Request [EN]
-![Request EN](IMG_Web/requête valide anglais.PNG? "Request EN")
+![Request EN](IMG_Web/requête%20valide%20anglais.PNG? "Request EN")
 ![Result EN](IMG_Web/requête%20valide%20anglais%202.PNG? "Result EN")
