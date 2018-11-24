@@ -2,7 +2,7 @@
 
 ![status](https://badgen.net/badge/Status/on%20standby/grey) 
 ![version](https://badgen.net/badge/Version/~0.1/cyan)
-![licence](https://badgen.net/badge/Licence/CC-BY-SA 3.0/blue)
+![licence](https://badgen.net/badge/Licence/CC-BY-SA%203.0/blue)
 
 The goal was to create a website that would classified Wikipedia data using a Triple-store database linked to the wikidata project. The classification process was based on a simplified version of the ranking algorithms used by search engines such as bing or duckduckgo.
 
