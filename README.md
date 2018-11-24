@@ -47,7 +47,7 @@ If you are a beginner, I recommend to use EasyPHP-Webserver/Devserver which pack
 
 #### 2.3. Valid Request [FR]
 ![Request FR](IMG_Web/requête%20valide%20français.PNG? "Request FR")
-![Result FR](IMG_Web/requête%20valide%20français 2.PNG? "Result FR")
+![Result FR](IMG_Web/requête%20valide%20français%202.PNG? "Result FR")
 
 #### 2.4. Valid Request [EN]
 ![Request EN](IMG_Web/requête%20valide%20anglais.PNG? "Request EN")
