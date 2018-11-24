@@ -11,7 +11,7 @@ If you are a beginner, I recommend to use EasyPHP-Webserver/Devserver which pack
 
 ## I - Understanding the concepts
 
-### 1. What is semantic web /web 3.0 ?
+### 1. What is semantic web / web 3.0 ?
 - https://en.wikipedia.org/wiki/Semantic_Web#Web_3.0
 - https://www.w3.org/standards/semanticweb/
 
